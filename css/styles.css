@@ -2,3 +2,18 @@
     background-image: url(/images/h-image.jpeg);
     background-size: cover;
 }
+.logo-d{
+    position: relative;
+    top: 600px;
+}
+.h2-title{
+    font-family: fantasy;
+
+}
+.menu{
+    background-image: url(/images/pizza-1.jpeg);
+}
+.caption-1{
+    position: relative;
+    left: 170px;
+}
