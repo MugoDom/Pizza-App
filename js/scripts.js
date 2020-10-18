@@ -1,5 +1,8 @@
+$(function (){
+    $("#total-order").hide();
+    $(".cdata-overlay").hide();
 
-
+});
 
 
 
@@ -238,7 +241,31 @@ $("#checkout").click(function(){
             }
     }
 
-    let newOrder = order(size, topping, crust, number, totalPrice);
-    console.log(newOrder);
+    let newOrder = order(size, topping, crust, numberOrder, totalPrice);
+   
 
+
+    //write to order
+
+    $("#checkout").click(function(){
+        $("#total-order").slideDown();
+        $(".cdata-overlay").slideUp();
+        $("#order-list").slideDown();
+        $(".deliver").show();
+        $(".not-a-delivery").show();
+
+
+        $("#order-list").text(" ");
+        $("#order-list").append("Size :   "
+        + newOrder.size + "<br>" + "Crust :     "
+        + newOrder.crust + "<br>" + "Topping :     "
+        + newOrder.topping + "<br>" + " Number of pizzas :    "
+        + newOrder.numberOrder + "<br>" + "Total Price :  "
+        + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
 });
+
+    });
+
+
+
+
