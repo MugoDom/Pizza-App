@@ -5,7 +5,7 @@
 
 
 .jumbotron-fluid{
-    background-image: url(/images/h-image.jpeg);
+    background-image: url("../images/h-image.jpeg");
     background-size: cover;
 }
 .logo-d{
@@ -17,7 +17,7 @@
 
 }
 .menu{
-    background-image: url(/images/wood-background.jpeg);
+    background-image: url("../images/wood-background.jpeg");
     border: solid black;
     background-color: orange;
 }
