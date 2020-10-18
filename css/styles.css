@@ -1,13 +1,12 @@
 .body{
-    margin: 1%;
-    padding: 1%;
+    margin: 0%;
+    padding: 0%;
 }
 
 
 .jumbotron-fluid{
     background-image: url(/images/h-image.jpeg);
     background-size: cover;
-    border: solid black;
 }
 .logo-d{
     position: relative;
@@ -19,9 +18,8 @@
 }
 .menu{
     background-image: url(/images/wood-background.jpeg);
-    background-size: cover;
     border: solid black;
-    width: 200%;
+    background-color: orange;
 }
 .caption-1{
     position: relative;
@@ -69,4 +67,10 @@
   .pizza-small{
       
       right: 80px;
+  }
+  .h1-order, .h2-menu{
+      font-family: fantasy;
+  }
+  .order{
+      background-color: orange;
   }
