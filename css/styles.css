@@ -1,6 +1,13 @@
+.body{
+    margin: 1%;
+    padding: 1%;
+}
+
+
 .jumbotron-fluid{
     background-image: url(/images/h-image.jpeg);
     background-size: cover;
+    border: solid black;
 }
 .logo-d{
     position: relative;
@@ -11,7 +18,10 @@
 
 }
 .menu{
-    background-image: url(/images/pizza-1.jpeg);
+    background-image: url(/images/wood-background.jpeg);
+    background-size: cover;
+    border: solid black;
+    width: 200%;
 }
 .caption-1{
     position: relative;
