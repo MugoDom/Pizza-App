@@ -1,7 +1,15 @@
-let Pizza = function PizzaSize (small, medium, large){
-    this.smallSize = small;
-    this.mediumSize = medium;
-    this.largeSize = large;
-}
 
-var 
+
+
+
+
+
+$("#checkout").click(function(){
+    let size = $("#size option:selected").val();
+    let topping = $("#topping option:selected").val();
+    let crust = $("#crust option:selected").val();
+    let numberOrder = $("number option:selected").val();
+
+    console.log(topping);
+
+});
