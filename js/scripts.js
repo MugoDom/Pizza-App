@@ -64,7 +64,7 @@ $("#checkout").click(function(){
             }
             break;
         case topping = "mushroom":
-            switch (swize){
+            switch (size){
                 case size = "small":
                     price = 500;
                     if (crust === "chicago"){
