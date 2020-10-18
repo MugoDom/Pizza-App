@@ -1,4 +1,4 @@
-# Pizza pap!
+# Dom's Pizza!
 [Check it out](https://mugodom.github.io/Pizza-App/)
 
 
