@@ -74,3 +74,47 @@
   .order{
       background-color: orange;
   }
+  .contact-overlay{
+    background-image: url("../images/wood-background.jpeg");
+    background-size: cover;
+    height: 500px;
+    margin-top: 2%;
+}
+#form{
+    width: 52%;
+    margin-left: 25%;
+    padding-right: 50px;
+
+}
+textarea{
+    background-color: transparent;
+}
+.name{
+ background-color: transparent;
+ display: inline-block;
+ position: relative;
+ right: 10px;
+}
+
+.email{
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    left: 10px;
+
+
+}
+.form-input{
+    background-color: transparent;
+    width:100%;
+}
+::placeholder {
+    color: white;
+  }
+.form-group{
+    color: white;
+}
+.active{
+    background-color: orange;
+}
