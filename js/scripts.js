@@ -4,18 +4,18 @@ $(function (){
 
 });
 
-
-
-
 $("#checkout").click(function(){
     let size = $("#size option:selected").val();
     let topping = $("#topping option:selected").val();
     let crust = $("#crust option:selected").val();
-    let numberOrder = $("number option:selected").val();
+    let number = ($("#number").val());
+    
+    console.log(number);
 
 
-    let order = (size, topping, crust, numberOrder, total) => {
-        return {size, topping, crust, numberOrder, total};
+
+    let order = (size, topping, crust, number, total) => {
+        return {size, topping, crust, number, total};
     };
 
 
@@ -241,7 +241,8 @@ $("#checkout").click(function(){
             }
     }
 
-    let newOrder = order(size, topping, crust, numberOrder, totalPrice);
+    let newOrder = order(size, topping, crust, number, totalPrice);
+    console.log(newOrder);
    
 
 
@@ -256,11 +257,11 @@ $("#checkout").click(function(){
 
 
         $("#order-list").text(" ");
-        $("#order-list").append("Size :   "
+        $("#order-list").append("<br>" + "Size :  "
         + newOrder.size + "<br>" + "Crust :     "
         + newOrder.crust + "<br>" + "Topping :     "
         + newOrder.topping + "<br>" + " Number of pizzas :    "
-        + newOrder.numberOrder + "<br>" + "Total Price :  "
+        + newOrder.number + "<br>" + "Total Price :  "
         + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
 });
 
