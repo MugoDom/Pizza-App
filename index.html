@@ -39,7 +39,7 @@
         </div>
 
     </div>
-    <div class="container menu">
+    <div class="container-fluid menu">
         <h2 class="text-center text-white h2-menu">Our Menu</h2>
         <div class="col-md-12">
             <div class="row">
@@ -110,9 +110,9 @@
                 <form class="col-sm-6 offset-sm-3 text-center">
                     <label>Select Size:</label>
                     <select name="" id="size" class="custom-select custom-select-md mb-3" required>
-                        <option value="small">Small</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
+                        <option value="small">Small @ Ksh. 500</option>
+                        <option value="medium">Medium @ Ksh. 750</option>
+                        <option value="large">Large @ Ksh. 1000</option>
                     </select>
                     <label>Choose Your Topping</label>
                     <select name="" id="topping" class="custom-select custom-select-md mb-3" required>
@@ -124,13 +124,19 @@
                     </select>
                     <label for="crust">Let's get Crusty</label>
                     <select name="" id="crust" class="custom-select custom-select-md mb-3" required>
-                        <option value="chicago">Chicago-style deep dish</option>
-                        <option value="sicilian">Sicilian Style</option>
-                        <option value="stuffed">Stuffed</option>
-                        <option value="crispy">Crispy</option>
+                        <option value="chicago">Chicago-style deep dish @ Ksh. 200</option>
+                        <option value="sicilian">Sicilian Style @ Ksh. 250</option>
+                        <option value="stuffed">Stuffed @ Ksh. 50</option>
+                        <option value="crispy">Crispy @ Ksh. 100</option>
                     </select>
+                    <label for="number">How many Pizza's would you like to buy?</label>
+                    <input type="number" class="form-control" id="number" placeholder="No. of pizza you would like" min="1" required>
 
                 </form>
+                <br>
+                <a href="#summary">
+                    <button type="submit" class="btn btn-primary checkout" id="checkout">Make your Order</button>
+                </a>
 
             </div>
 
