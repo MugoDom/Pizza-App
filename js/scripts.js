@@ -254,6 +254,8 @@ $("#checkout").click(function(){
         $("#order-list").slideDown();
         $(".deliver").show();
         $(".not-a-delivery").show();
+        
+
 
 
         $("#order-list").text(" ");
@@ -264,6 +266,10 @@ $("#checkout").click(function(){
         + newOrder.number + "<br>" + "Total Price :  "
         + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
 });
+    $(".deliver").click(function(){
+        prompt("Please enter your Location.");
+        alert("Your order will be delivered soon.")
+    });
 
     });
 
